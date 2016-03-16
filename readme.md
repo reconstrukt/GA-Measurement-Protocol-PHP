@@ -17,10 +17,10 @@ Usage
 
 Pretty straightforward, just drop in and go.
 
-    ```php
+    `php
         <?php
         // drop in the class
-        require_once 'lib/simple-ga.php';
+        require_once 'lib/gamp.php';
 
         // init with your GA Site ID
         $gamp = new gamp( 'UA-XXXXXXXX-X' );
@@ -30,15 +30,15 @@ Pretty straightforward, just drop in and go.
 
         // set event
         (bool) $ok = $gamp->event( 'Test', 'GAMP-Event-Hit' );
-    ```
+    `
 
 Also supports a 'debug' option, based on [GA's hit validation docs](https://developers.google.com/analytics/devguides/collection/protocol/v1/validating-hits).  Usage:
 
 Usage:
 
-    ```php
+    `php
         <?php
-        require_once 'lib/simple-ga.php';
+        require_once 'lib/gamp.php';
         $gamp = new gamp( 'UA-XXXXXXXX-X' );
         
         // I can haz debug
@@ -50,5 +50,5 @@ Usage:
         
         // wassup 
         print_r( $gamp->log );
-    ```
+    `
 
