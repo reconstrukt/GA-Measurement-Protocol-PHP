@@ -36,19 +36,19 @@ Also supports a 'debug' option, based on [GA's hit validation docs](https://deve
 
 Usage:
 
-    `php
-        <?php
-        require_once 'lib/gamp.php';
-        $gamp = new gamp( 'UA-XXXXXXXX-X' );
-        
-        // I can haz debug
-        $gamp->debug = true;
+```php
+<?php
+require_once 'lib/gamp.php';
+$gamp = new gamp( 'UA-XXXXXXXX-X' );
 
-        // set pageview + event
-        $hit = $gamp->pageview();
-        $hit = $gamp->event( 'Test', 'GAMP-Event-Hit' );
-        
-        // wassup 
-        print_r( $gamp->log );
-    `
+// I can haz debug
+$gamp->debug = true;
+
+// set pageview + event
+$hit = $gamp->pageview();
+$hit = $gamp->event( 'Test', 'GAMP-Event-Hit' );
+
+// wassup 
+print_r( $gamp->log );
+```
 
