@@ -17,20 +17,20 @@ Usage
 
 Pretty straightforward, just drop in and go.
 
-    `php
-        <?php
-        // drop in the class
-        require_once 'lib/gamp.php';
+```php
+<?php
+// drop in the class
+require_once 'lib/gamp.php';
 
-        // init with your GA Site ID
-        $gamp = new gamp( 'UA-XXXXXXXX-X' );
+// init with your GA Site ID
+$gamp = new gamp( 'UA-XXXXXXXX-X' );
 
-        // set pageview
-        (bool) $hit = $gamp->pageview( '/url/to/track', 'My Page Title' );
+// set pageview
+(bool) $hit = $gamp->pageview( '/url/to/track', 'My Page Title' );
 
-        // set event
-        (bool) $hit = $gamp->event( 'Test', 'GAMP-Event-Hit' );
-    `
+// set event
+(bool) $hit = $gamp->event( 'Test', 'GAMP-Event-Hit' );
+```
 
 Also supports a 'debug' option, based on [GA's hit validation docs](https://developers.google.com/analytics/devguides/collection/protocol/v1/validating-hits).  Usage:
 
