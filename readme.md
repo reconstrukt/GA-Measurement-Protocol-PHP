@@ -32,7 +32,7 @@ $gamp = new gamp( 'UA-XXXXXXXX-X' );
 (bool) $hit = $gamp->event( 'Test', 'GAMP-Event-Hit' );
 ```
 
-Also supports a 'debug' option, based on [GA's hit validation docs](https://developers.google.com/analytics/devguides/collection/protocol/v1/validating-hits).  Usage:
+Also supports a 'debug' option, based on [GA's hit validation docs](https://developers.google.com/analytics/devguides/collection/protocol/v1/validating-hits).
 
 Usage:
 
